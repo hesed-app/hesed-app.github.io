@@ -1,0 +1,43 @@
+.blog-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.blog-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 15px;
+    color: #333;
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.blog-author {
+    font-size: 14px;
+    color: #666;
+}

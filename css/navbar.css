@@ -1,0 +1,171 @@
+.navbar {
+    padding: 0 2.5em;
+
+    position: fixed;
+    /* Torna a navbar fixa */
+    top: 0;
+    /* Fixa no topo */
+    left: 0;
+    height: 15vh;
+    /* Ocupa toda a largura */
+    width: 100%;
+    display: flex;
+    /* background: #1e2328; */
+    opacity: 0.3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* Mantém a navbar sobre outros elementos */
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.theme-switcher {
+    display: flex;
+    align-items: center;
+    order: 1;
+    flex-shrink: 0;
+}
+
+#toggle-theme {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#toggle-theme:hover {
+    background-color: #333;
+}
+
+/* TESTE */
+/* Estilização do botão */
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+/* Ocultar o checkbox padrão */
+.toggle input {
+    display: none;
+    content: "🌙";
+}
+
+/* Slider principal */
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #1e2328, #2c3e50);
+
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+}
+
+/* Ícone do sol/lua */
+.icon {
+    font-size: 10px;
+    background: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease-in-out, background 0.4s ease-in-out, left 0.4s ease-in-out;
+    position: absolute;
+    left: 5px;
+}
+
+/* Quando o botão for ativado */
+.toggle input:checked+.slider {
+    background: linear-gradient(to right, #4dafff, #1e90ff);
+}
+
+/* Movendo o ícone para a direita */
+.toggle input:checked+.slider .icon {
+    left: 32px;
+    transform: rotate(360deg);
+}
+
+/* TESTE */
+
+
+.hesed-logo {
+    flex-shrink: 0;
+    width: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+@media (max-width: 768px) {
+    .hesed-logo {
+        width: 50px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.7em;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        padding: 0 0.5em;
+    }
+
+    .hesed-logo {
+        width: 35px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 0.6em;
+    }
+
+}

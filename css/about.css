@@ -1,0 +1,15 @@
+.about-section {
+    padding: 2em;
+    display: flex;
+    gap: 20px;
+}
+
+.about-section img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-section .text {
+    text-align: justify;
+}

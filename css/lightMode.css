@@ -1,0 +1,44 @@
+/* Tema Claro */
+.light-mode {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.light-mode .navbar {
+    background-color: #e8e9e9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .nav-links a {
+    color: #333;
+    /* Deixa os links visíveis no tema claro */
+}
+
+.light-mode #toggle-theme:hover {
+    background-color: #dbdbdb;
+}
+
+/* Corpo do site */
+.light-mode main {
+    background-color: #eaebeb;
+    color: #333;
+}
+
+
+.light-mode .start-section {
+    color: black;
+}
+
+.light-mode .description-section,
+.light-mode .call-section,
+.light-mode .course-section {
+    color: white;
+}
+
+
+/* Rodapé */
+.light-mode footer {
+    background-color: #ffffff;
+    color: #333;
+}

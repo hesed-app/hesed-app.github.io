@@ -1,0 +1,39 @@
+.post-section {
+    padding: 2em 15em;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    padding: 2em;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.post pre {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .post-section {
+        padding: 2em 3em;
+    }
+
+    .post {
+        padding: 1em;
+        font-size: 1em;
+    }
+
+    .post pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-x: auto;
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 425px) {}
